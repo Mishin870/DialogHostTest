@@ -1,0 +1,38 @@
+﻿<Window x:Class="DialogHostTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <materialDesign:DialogHost
+        Identifier="RootDialog">
+        <StackPanel
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left">
+            <Button
+                Name="Short"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Click="Short_OnClick">
+                <materialDesign:PackIcon
+                    Kind="Refresh" />
+            </Button>
+            <Button
+                Name="Medium"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Click="Medium_OnClick">
+                <materialDesign:PackIcon
+                    Kind="Refresh" />
+            </Button>
+            <Button
+                Name="Long"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Click="Long_OnClick">
+                <materialDesign:PackIcon
+                    Kind="Refresh" />
+            </Button>
+        </StackPanel>
+    </materialDesign:DialogHost>
+</Window>
